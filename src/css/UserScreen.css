@@ -1,0 +1,11 @@
+.nav-buttons{
+	-fx-border:none;
+	-fx-padding: 5px 8px 5px 8px;
+	-fx-margin-right: 5px;
+}
+.username{
+	-fx-font: 2em "Brush Script MT", "Brush Script Std", cursive;
+}
+.search-bar{
+	-fx-padding: 10px;
+}

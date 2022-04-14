@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<DialogPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ImageMoveController">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="300.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id= "move" fx:id = "move" text="Move Image">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <VBox prefHeight="108.0" prefWidth="239.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label id= "move2" fx:id = "move2" text="Move image into album:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <TextField id= "albumName" fx:id = "albumName" prefHeight="45.0" promptText="Album name ...">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                   <Button id = "OK" fx:id="OK" onAction="#OK" prefWidth="100.0" mnemonicParsing="false" text="OK" >
+				        <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+								</Button>
+								<Button id = "CANCEL" fx:id="CANCEL" onAction="#CANCEL"   prefWidth="100.0" mnemonicParsing="false" text="CANCEL">
+									 <VBox.margin>
+                        <Insets top="-25" left="150" />
+                     </VBox.margin>
+								</Button>  
+               </children>
+            </VBox>
+            
+         </center>
+      </BorderPane>
+   </content>
+ 
+</DialogPane>

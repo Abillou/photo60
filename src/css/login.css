@@ -1,0 +1,11 @@
+.login-screen{
+	/*-fx-background-color: #9AD0EC;*/
+}
+.login-block{
+	-fx-background-color: #fff; 
+	-fx-background-radius: 30.0px;
+	
+}
+.block-title{
+	-fx-font: 2em "Brush Script MT", "Brush Script Std", cursive;
+}

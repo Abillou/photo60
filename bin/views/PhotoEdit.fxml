@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="823.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PhotoEditController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="121.0" layoutY="151.0" prefHeight="849.0" prefWidth="400.0" AnchorPane.bottomAnchor="-103.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="photoName" text="Photo Name">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fx:id="imageContainer" fitHeight="150.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../data/stock1.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="date" text="Date-time">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="newCaptionField" prefHeight="45.0" prefWidth="300.0" promptText="New caption...">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="tagsList" maxHeight="609.0" maxWidth="400.0" prefHeight="202.0" prefWidth="400.0">
+              <columns>
+                <TableColumn id="tagType" fx:id="tagType" prefWidth="192.0" text="Tag Type" />
+                <TableColumn id="value" fx:id="value" prefWidth="207.0" text="Tag Value" />
+              </columns>
+            </TableView>
+            <Label text="Type" translateX="-175.0" translateY="10.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="options" prefWidth="150.0" translateX="-70.0" translateY="-23.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <TextField fx:id="newTagValue" maxWidth="150.0" prefHeight="29.0" prefWidth="150.0" promptText="New Tag Value" translateX="100.0" translateY="-50.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="add" mnemonicParsing="false" onAction="#add" text="Add" translateX="105.0" translateY="-50.0" />
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#delete" text="Delete" translateX="105.0" translateY="-40.0" />
+            <TextField fx:id="newTagType" maxWidth="150.0" prefHeight="42.0" prefWidth="153.0" promptText="New Tag Type" translateX="-70.0" translateY="-95.0" visible="false" />
+            <Button fx:id="done" mnemonicParsing="false" onAction="#done" text="Done" translateY="-160.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
